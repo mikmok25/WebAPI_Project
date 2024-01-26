@@ -7,16 +7,16 @@ using System.Web.Http;
 
 namespace WebAPI_Project.Controllers
 {
-    public class IntegerController : ApiController
+    public class GreetingController : ApiController
     {
-        public int Get()
+        public string Get()
         {
-            return 5 + 5;
+            return "Hello World";
         }
 
-        public int Get(int id)
+        public string Get(string id)
         {
-            return id;
+            return "Hello to " + id + " people!";
         }
     }
 }
